@@ -1,0 +1,108 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 text-center">
+
+
+            <button [hidden]="start_but"
+            class="btn btn-success main_btn"
+            (click)="start_game()"
+            >
+              start game</button>
+            <div [hidden]="!start_but">
+                <!--container starts-->
+              <div class="container">
+                <div class="row">
+                    <!--col 1-->
+                    <div class="col-3">
+                        <div class="col-12 bg-danger mt-2 rounded text">human</div>
+                    
+                        <button (click)="paper()"class="btn btn-primary human">paper</button><br>
+                        <button (click)="rock()"class="btn btn-primary human">rock</button><br>
+                        <button (click)="scissor()"class="btn btn-primary human">scissor</button><br>
+                </div>
+                    <!--col 2-->
+                    <!--main container-->
+                    <div class="col-6 main_box">
+                        <h1>main container</h1>
+                        <div class="row">
+
+                            <!--human image-->
+                            <div class="col-6 game_vid">
+                                <img [src]="l_img_url" height="150px">
+                            </div>
+
+                            <!--computer-->
+                            <div class="col-6 game_vid">Machine
+                                <img [src]="r_img_url" height="150px">
+                            </div>
+                        </div>
+
+
+                     <!--match no row-->
+                       <div class="row">
+                          <div class="col-12">
+                            <h2>Match number:
+                            <span style="color: red;">{{t_match}}</span>
+                            </h2>
+
+                          </div>
+                       </div>
+                    
+                    <!--score-->
+                    <div class="row">
+                        <div class="col-6">
+                            <h2>Human:</h2>
+                            <hr style="border: solid 2px;">
+                            <h4>Win:
+                            <span style="color: whitesmoke;
+                                        font-weight:700;
+                                        background-color: brown;
+                                        ">{{h_win}}score</span></h4>
+                            <h4>Draw:{{h_draw}}</h4>
+                            <h4>Loss:{{h_lost}}</h4>
+                        </div>
+                    
+                    
+                    
+                        <div class="col-6">
+                            <h2>Machine:</h2>
+                            <hr style="border: solid 2px;">
+                            <h4>Win:
+                                <span style="color: whitesmoke;
+                                font-weight:700;
+                                background-color: brown;
+                                ">{{m_win}}score</span></h4>
+                            <h4>Draw:{{m_draw}}</h4>
+                            <h4>Loss:{{m_lost}}</h4>
+                        </div>
+                    </div>
+                </div>
+               
+                    <!--col 3-->
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12 bg-danger mt-2 rounded text">machine</div>
+                        <button class="btn btn-primary human">paper</button><br>
+                        <button class="btn btn-primary human">rock</button><br>
+                        <button class="btn btn-primary human">scissor</button><br>
+                        
+                    </div>
+                </div>
+            </div>  
+
+            <!--container ends-->
+
+
+        </div>
+            </div>
+
+        <div class="col-md-1"></div>
+
+    </div>
+</div>
+
+
+
+
+

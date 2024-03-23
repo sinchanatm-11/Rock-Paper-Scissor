@@ -1,0 +1,39 @@
+.main_btn{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    font-size: 54px;
+}
+.human{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px 30px 20px 30px;
+    border-width: 5px;
+    border-color:   red green yellow purple;
+}
+.human:hover {
+background-image:linear-gradient(pink,silver,gold);
+color: blue;
+height:100px;
+width:100px;
+}
+.main_box{
+    border: solid 5px red;
+    margin-top: 45px;
+    border-radius: 5%;
+    border-color: black blue violet orange;
+
+}
+
+.game_vid{
+    border: solid 15px;
+    border-radius: 20%;
+    border-color: chocolate green red yellow;
+    height: 200px;
+    width: 200px;
+}
